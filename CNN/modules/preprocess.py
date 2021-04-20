@@ -37,7 +37,7 @@ class Preprocess:
             # open image
             if image_name not in done_file:
                 done_file[image_name] = 1
-                image_path = f"{self.root}/images/{image_name}"
+                image_path = f"{self.root}/raw_data/images/{image_name}"
                 img = Image.open(image_path)
                 img = img.convert("RGB")
 
@@ -106,16 +106,20 @@ class Preprocess:
         return pad(img)
 
     def save_processed_data(self):
+        if not os.path.isdir("./pre_processed"):
+            os.mkdir("./pre_processed")
+
         train_str = "train" if self.train else "test"
         modify_str = {"not_modify": "", "pad": "_pad", "crop": "_crop"}
+
         np.save(f"{self.root}/pre_processed/{train_str}_data{modify_str[self.modify]}.npy", self.data)
         np.save(f"{self.root}/pre_processed/{train_str}_targets{modify_str[self.modify]}.npy", self.targets)
 
     def load_df(self):
         if self.train:
-            return pd.read_csv(f'{self.root}/train.csv')
+            return pd.read_csv(f'{self.root}/raw_data/train.csv')
         self.over_sampling = False
-        return pd.read_csv(f'{self.root}/test.csv')
+        return pd.read_csv(f'{self.root}/raw_data/test.csv')
 
     def _check_exists(self) -> bool:
         train_str = "train" if self.train else "test"

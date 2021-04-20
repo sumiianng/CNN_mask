@@ -7,16 +7,16 @@ from PIL import Image, ImageDraw, ImageFont
 def show_label_on_image(root, all_preds, train=True,
                         filename=None, fontsize=12):
     if train:
-        df = pd.read_csv('train.csv')
+        df = pd.read_csv(f'{root}/raw_data/train.csv')
     else:
-        df = pd.read_csv('test.csv')
+        df = pd.read_csv(f'{root}/raw_data/test.csv')
 
     if filename is None:
         sample = np.random.randint(len(df), size=1)
         filename = list(df['filename'][sample])[0]
 
     df = df[df['filename'] == filename]
-    img = Image.open(f"{root}/images/{filename}")
+    img = Image.open(f"{root}/raw_data/images/{filename}")
 
     co_map = {0: "green", 1: "blue", 2: "red"}
     label_map = {0: "good", 1: "none", 2: "bad"}
