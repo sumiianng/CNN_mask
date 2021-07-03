@@ -22,14 +22,24 @@ Construct our network by using pytorch.Our CNN contains two parts. The first par
 Then, set the hyper-parameters including batch size, learning rate.... Then, we use adam optimizer to train our model.In the training stage, we use the run_manager constructed by ourselves to record the data in each epoch and show the dataframe to know the loss and accuracy. It may heip us to analyze the results later.
 
 ## Learning curve
-Use the data recorded in run manager, show the line plot to understand the change of loss and accuracy as the epoch increases including training and testing dataset.
+Use the data recorded in run manager, show the line plot to understand the change of loss and accuracy as the epoch increases including training and testing dataset.  
+
+![image](https://github.com/sumiianng/Deep_learning/blob/main/CNN/results/Accuracy.png)
+![image](https://github.com/sumiianng/Deep_learning/blob/main/CNN/results/Cross%20entropy.png)
+
+Compare the learning curve with different hyper parameters.  
+
 ![image](https://github.com/sumiianng/Deep_learning/blob/main/CNN/results/Accuracy.png)
 ![image](https://github.com/sumiianng/Deep_learning/blob/main/CNN/results/Accuracy.png)
 
 ## Confusion matrix
 Show the confusion matrix of the training and testing prediction results, and plot it. It makes us to know the model's prediction situations between the three type of classes.  
 
+![image](https://github.com/sumiianng/Deep_learning/blob/main/CNN/results/Accuracy.png)
+
 Furthermore, we show the accuracies in each ture classes. Example: In the 100 true 'good' data, the model predict 97 'good' and 3 not 'good'. Knowing which classes predict the worst, we can try to adjust the dataset or model to make the results better.
 
 ## Results
-Randomly sample some images contain many people's face , and show the predict lable of them in the imges.
+Randomly sample some images contain many people's face , and show the predict lable of them in the imges.  
+
+![image](https://github.com/sumiianng/Deep_learning/blob/main/CNN/results/Accuracy.png)
