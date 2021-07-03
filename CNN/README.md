@@ -29,17 +29,19 @@ Use the data recorded in run manager, show the line plot to understand the chang
 
 Compare the learning curve with different hyper parameters.  
 
-![image](https://github.com/sumiianng/Deep_learning/blob/main/CNN/results/Accuracy.png)
-![image](https://github.com/sumiianng/Deep_learning/blob/main/CNN/results/Accuracy.png)
+![image](https://github.com/sumiianng/Deep_learning/blob/main/CNN/results/Accuracy_train.png)
+![image](https://github.com/sumiianng/Deep_learning/blob/main/CNN/results/Cross_entropy_train.png)
 
 ## Confusion matrix
 Show the confusion matrix of the training and testing prediction results, and plot it. It makes us to know the model's prediction situations between the three type of classes.  
 
-![image](https://github.com/sumiianng/Deep_learning/blob/main/CNN/results/Accuracy.png)
+![image](https://github.com/sumiianng/Deep_learning/blob/main/CNN/results/Train%20confusion%20matrix.png)
+![image](https://github.com/sumiianng/Deep_learning/blob/main/CNN/results/Test%20confusion%20matrix.png)
+
 
 Furthermore, we show the accuracies in each ture classes. Example: In the 100 true 'good' data, the model predict 97 'good' and 3 not 'good'. Knowing which classes predict the worst, we can try to adjust the dataset or model to make the results better.
 
 ## Results
 Randomly sample some images contain many people's face , and show the predict lable of them in the imges.  
 
-![image](https://github.com/sumiianng/Deep_learning/blob/main/CNN/results/Accuracy.png)
+![image](https://github.com/sumiianng/Deep_learning/blob/main/CNN/results/sample_img.png)
