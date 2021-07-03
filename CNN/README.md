@@ -23,6 +23,8 @@ Then, set the hyper-parameters including batch size, learning rate.... Then, we 
 
 ## Learning curve
 Use the data recorded in run manager, show the line plot to understand the change of loss and accuracy as the epoch increases including training and testing dataset.
+![image](https://github.com/sumiianng/Deep_learning/blob/main/CNN/results/Accuracy.png)
+![image](https://github.com/sumiianng/Deep_learning/blob/main/CNN/results/Accuracy.png)
 
 ## Confusion matrix
 Show the confusion matrix of the training and testing prediction results, and plot it. It makes us to know the model's prediction situations between the three type of classes.  
