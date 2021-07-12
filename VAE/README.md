@@ -11,29 +11,29 @@ We train the network and show the results. The results include four parts：lear
 * Learning curve  
 &emsp;
 <div align="center">
-<img src="" height="200px">
+<img src="https://github.com/sumiianng/image_storage/blob/main/VAE/loss.png" height="200px">
 </div>
 
 &emsp;
 * Re-generated images  
 &emsp;
 <div align="center">
-<img src="" height="200px">
-<img src="" height="200px">
+<img src="https://github.com/sumiianng/image_storage/blob/main/VAE/original_img.png" height="200px">
+<img src="https://github.com/sumiianng/image_storage/blob/main/VAE/regenerate_img.png" height="200px">
 </div>
 
 &emsp;
 * Generated images  
 &emsp;
 <div align="center">
-<img src="" height="200px">
+<img src="https://github.com/sumiianng/image_storage/blob/main/VAE/generate_img.png" height="200px">
 </div>
 
 &emsp;
 * Change between two images  
 &emsp;
 <div align="center">
-<img src="" height="200px">
+<img src="https://github.com/sumiianng/image_storage/blob/main/VAE/images_change.png" height="200px">
 </div>
 
 ### 3. Comparison
