@@ -3,7 +3,7 @@ In the project, I construct a Convolutional Neural Network (CNN) for image recog
   
 The file contains two parts. The first part is the images, and the second part is train.csv and test.csv which contain the person's information in the image including the location in the image and the the situaion of wearing mask (targets).  
 
-Here is the dataset.
+[Here](https://drive.google.com/drive/folders/1TvGSz-YL2IXkPCMRY_MzlHAtjQzSmH_k?usp=sharing) is the dataset.
 
 ## Preprocessing
 The raw data contains a images folder and train/test.csv. In the images folder, there are 684 images. Each image can be cut into many people's face images through the train/test.csv recording the location of people's face in the image.These people's face images are our training and testing data.
