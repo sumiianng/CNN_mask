@@ -3,7 +3,7 @@ In the project, we construct a VAE network to re-generate the animation images. 
 coefficients.
 
 ### 1. Data
-The raw data contains 21551 anime images. [Here](https://drive.google.com/drive/folders/1940Je8vFA8zeTcwcAYXsyTbJSwEJxz8m?usp=sharing) is the images.  
+The raw data contains 21551 anime images. [Here](https://drive.google.com/drive/folders/1940Je8vFA8zeTcwcAYXsyTbJSwEJxz8m?usp=sharing) is the images I used. The dataset is collected from [kaggle](https://www.kaggle.com/soumikrakshit/anime-faces).
 
 ### 2. Results
 We train the network and show the results. The results include four parts：learning curve, re-generated images, generated images, and the change between two images. First, we use the loss tracked during the training phase to show the learning curve plot. Second, we choose some images randomly and show the original images and the re-gerated images. Then, we randomly generate some value of z to gernerate the images. Finally, we random generate two value of z and generate other value of z by interpolation between them. Show the change of the images because of the change of z.  
